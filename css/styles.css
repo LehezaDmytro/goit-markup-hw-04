@@ -51,6 +51,7 @@ body {
 
 /* Heder styles */
 .header {
+
   background-color: var(--main-background-color);
 }
 
@@ -124,10 +125,13 @@ body {
 }
 
 .header-contact {
+  display: inline-flex;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  align-items: center;
   color: var(--secondary-text-color);
   text-decoration: none;
 }
@@ -139,6 +143,15 @@ body {
 .header-contact:hover,
 .header-contact:focus {
   color: var(--accent-color);
+}
+
+.header-contact-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.header-contact-icon:hover {
+  fill: var(--accent-color);
 }
 
 /* Maine styles */
