@@ -146,12 +146,9 @@ body {
 }
 
 .header-contact-icon {
-  fill: currentColor;
   margin-right: 10px;
-}
 
-.header-contact-icon:hover {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 /* Maine styles */
@@ -161,8 +158,13 @@ body {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1600px;
 
-  background-color: var(--secondary-background-color);
+  background-color: #C4C4C4;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/general/background-photo.jpg);
+  background-position: center;
 }
 
 .hero-title {
@@ -218,6 +220,19 @@ body {
 
 .feature-item {
   width: 270px;
+}
+
+.feature-item-icon-container {
+  margin-bottom: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  height: 120px;
+
+  background-color: #F5F4FA;
+  border-radius: 4px;
 }
 
 .feature-title {
@@ -309,12 +324,93 @@ body {
   color: var(--secondary-text-color);
 }
 
+.socials-list {
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+
+  display: flex;
+  gap: 10px;
+  width: 206px;
+  height: 44px;
+}
+
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  color: #AFB1B8;
+
+  border-radius: 50%;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+.socials-icon {
+  fill: currentColor;
+}
+
+/* Section ustomers styles*/
+
+.customers-title {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--primery-text-color);
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.customer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+
+  color: #AFB1B8;
+
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+
+.customer-link:hover,
+.customer-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.customer-icon {
+  fill: currentColor;
+}
+
+
+
 /* Footer styles */
 
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--secondary-background-color);
+}
+
+.footer-contaiter {
+  display: flex;
+  gap: 70px;
 }
 
 /* Footer logo */
@@ -376,6 +472,52 @@ body {
   color: var(--accent-color);
 }
 
+/* Footer socials */
+
+.footer-socials {
+  padding-top: 12px;
+}
+
+.footer-socials-title {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.footer-socials-list {
+  display: flex;
+  gap: 10px;
+  width: 206px;
+  height: 44px;
+}
+
+.footer-socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  color: #AFB1B8;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  border-radius: 50%;
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+.footer-socials-icon {
+  fill: currentColor;
+}
+
 /* Portfolio page */
 
 /* Mine styles */
@@ -406,9 +548,11 @@ body {
   border-radius: 4px;
 }
 
-.filter-button:hover {
+.filter-button:hover,
+.filter-button:focus {
   color: #fff;
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Projects */
@@ -423,9 +567,14 @@ body {
   background-color: var(--main-background-color);
 }
 
+.project:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .project-link {
   text-decoration: none;
 }
+
 
 .project-link-img {
   display: block;
